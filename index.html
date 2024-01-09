@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="icon" href="./images/G-logo.svg">
 </head>
 <body class="gymTopbg flex flex-col justify-center items-center standard md:h-screen lg:h-[682px]">
   <h1 class="gymTopFont gymTopColor text-[120px] absolute text-center top-[-45px] md:text-[150px] md:translate-x-[5%] md:translate-y-[20%] lg:translate-x-[0%]">GYMTOP</h1>
@@ -11,17 +12,18 @@
       <img class="w-full md:w-1/2" src="./images/cuponModel-transformed.jpeg" alt="">
       <form action="" class="grid gap-[19px] md:place-content-center md:w-1/2 lg:gap-[40px]">
         <h1 class="text-center blueGym text-[20px] font-extrabold lg:text-[38px]">Coloca tu cupon aqui</h1>
-        <label for="cupon" class="grid gap-[15px] lg:gap-[30px]">
-          <input id="cupon" class="inputBg h-[45px] text-center blueGym font-extrabold outline-none lg:w-[400px] lg:h-[50px]" type="text" name="" id="">
+        <label for="" class="grid gap-[15px] lg:gap-[30px]">
+          <input id="precio" class="inputBg h-[45px] text-center blueGym font-extrabold outline-none lg:w-[400px] lg:h-[50px]" type="text" placeholder="Ingresa el precio">
+          <input id="cupon" class="inputBg h-[45px] text-center blueGym font-extrabold outline-none lg:w-[400px] lg:h-[50px]" type="text" name="" placeholder="Ingresa tu cupon">
           <button id="cuponbtn" class="h-[45px] blueTop whiteGym font-extrabold text-[20px] lg:w-[400px] lg:h-[50px]">Enviar</button>
         </label>
       </form>
     </div>
     <div id="sucess-cupon" class="hidden flex flex-col gap-[23px] p-[15px] bgCard w-[290px] card-shadow z-10 mt-16 relative md:hidden md:flex-row md:w-[550px] md:mt-0 lg:w-[920px]">
-      <img class="w-full md:w-1/2" src="./images/cuponModel Success.jpg" alt="">
+      <img class="w-full md:w-1/2 object-cover" src="./images/cuponModel Success.jpg" alt="">
       <form action="" class="grid gap-[72px] md:place-content-center md:w-1/2 lg:gap-[40px]">
-        <h1 class="text-center blueGym text-[40px] font-extrabold lg:text-[38px]">Bienvenido</h1>
-          <button class="h-[45px] blueTop whiteGym font-extrabold text-[20px] lg:w-[400px] lg:h-[50px]">Enviar</button>        
+        <h1 id="resultContainer" class="text-center blueGym text-[40px] font-extrabold lg:text-[38px]">Bienvenido</h1>
+        <button id="botonResultado" class="h-[45px] blueTop whiteGym font-extrabold text-[20px] lg:w-[400px] lg:h-[50px]">Descuento</button>        
       </form>
     </div>
     <script src="./script.js"></script>

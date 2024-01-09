@@ -1,7 +1,12 @@
+alert("Los cupones disponibles son: cupon1, cupon2, cupon3, cupon4, cupon5")
+
 const initialContent = document.getElementById("initial-content")
 const success = document.getElementById("sucess-cupon")
+const precioInput = document.getElementById("precio")
 const cuponInput = document.getElementById("cupon")
 const btnCupon = document.getElementById("cuponbtn")
+const btnResultado = document.getElementById("botonResultado")
+
 
 btnCupon.addEventListener("click", function(event){
     event.preventDefault()
@@ -9,21 +14,27 @@ btnCupon.addEventListener("click", function(event){
 btnCupon.addEventListener("click", verificarCupon)
 
 const cupones = {
-    "cupon1": 34,
-    "cupon2": 37,
-    "cupon3": 42,
-    "cupon4": 25,
-    "cupon5": 25
+    "cupon1": 20,
+    "cupon2": 30,
+    "cupon3": 40,
+    "cupon4": 50,
+    "cupon5": 75
 }
-let anchoPantalla = window.innerWidth;
 
 function verificarCupon(){
-    let cupon = cuponInput.value 
+    let cupon = cuponInput.value
+    let precio = precioInput.value
+    let descuento = 0
+    let precioFinal = 0
     if(cupones[cupon]){
+        descuento = precio * (cupones[cupon])/100
+        precioFinal = Math.floor(precio - descuento)
         initialContent.style.display = "none"
         success.style.display = "flex"
+        btnResultado.innerText = "Tu descuento $" +  precioFinal
+    }else{
+        cuponInput.style.outline = "solid"
+        cuponInput.style.outlineColor = "red"
     }
 }
 
-// Mostrar el ancho en la consola para verificar
-console.log("Ancho de la pantalla: " + anchoPantalla);
