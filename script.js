@@ -20,13 +20,8 @@ let anchoPantalla = window.innerWidth;
 function verificarCupon(){
     let cupon = cuponInput.value 
     if(cupones[cupon]){
-        if(anchoPantalla<768){
-            success.style.display = "grid"
-            initialContent.style.display = "none"
-        }else{
-            success.style.display = "flex"
-            initialContent.style.display = "none"
-        }
+        initialContent.style.display = "none"
+        success.style.display = "flex"
     }
 }
 

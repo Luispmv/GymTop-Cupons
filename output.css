@@ -582,16 +582,16 @@ video {
   height: 45px;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .w-\[290px\]{
   width: 290px;
 }
 
 .w-full{
   width: 100%;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -711,10 +711,6 @@ video {
     display: none;
   }
 
-  .md\:h-\[520px\]{
-    height: 520px;
-  }
-
   .md\:h-screen{
     height: 100vh;
   }
@@ -727,16 +723,6 @@ video {
     width: 550px;
   }
 
-  .md\:translate-x-\[30\%\]{
-    --tw-translate-x: 30%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:translate-y-\[-30\%\]{
-    --tw-translate-y: -30%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .md\:translate-x-\[5\%\]{
     --tw-translate-x: 5%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -745,6 +731,10 @@ video {
   .md\:translate-y-\[20\%\]{
     --tw-translate-y: 20%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:place-content-center{
@@ -761,14 +751,6 @@ video {
     height: 50px;
   }
 
-  .lg\:h-\[694px\]{
-    height: 694px;
-  }
-
-  .lg\:h-\[624px\]{
-    height: 624px;
-  }
-
   .lg\:h-\[682px\]{
     height: 682px;
   }
@@ -779,11 +761,6 @@ video {
 
   .lg\:w-\[920px\]{
     width: 920px;
-  }
-
-  .lg\:translate-x-\[85\%\]{
-    --tw-translate-x: 85%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:translate-x-\[0\%\]{
@@ -801,11 +778,5 @@ video {
 
   .lg\:text-\[38px\]{
     font-size: 38px;
-  }
-}
-
-@media (min-width: 1280px){
-  .xl\:h-\[694px\]{
-    height: 694px;
   }
 }
