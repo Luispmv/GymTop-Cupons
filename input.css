@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.standard{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.gymTopbg{
+    background-color: #FF9209;
+}
+.bgCard{
+    background-color: #EDE8E2;
+}
+.blueTop{
+    background-color: #3D1EFF;
+}
+.blueGym{
+    color: #3D1EFF;
+}
+.whiteGym{
+    color: #EDE8E2;
+}
+.card-shadow{
+    box-shadow: -5px 5px 0px 0px #000;
+}
+.gymTopFont{
+    font-family: 'League Gothic', sans-serif;
+}
+.gymTopColor{
+        color: #FFD095;
+        transform: translate(0%, 5%);
+}
+.inputBg{
+    background-color: #FFD095;
+}
+/* .gymTopPosition{
+    transform: translate(30%, -30%);
+} */
